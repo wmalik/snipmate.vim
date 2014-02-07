@@ -1,14 +1,7 @@
 # module and export all
 snippet mod
 	-module(${1:`Filename('', 'my')`}).
-	
 	-compile([export_all]).
-	
-	start() ->
-	    ${2}
-	
-	stop() ->
-	    ok.
 # define directive
 snippet def
 	-define(${1:macro}, ${2:body}).${3}
